@@ -1,0 +1,257 @@
+/* Header */
+.header-nav {
+    height: 30px !important;
+}
+#header .header-nav-main nav > ul > li > a {
+    text-transform: none !important;
+}
+/* 文字列の折り返し位置 */
+.rtn {
+    display: inline-block;
+    text-indent: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-color-blue {
+    background-color: #090e79 !important;
+}
+
+.bg-color-green {
+    background-color: #A7D8D0 !important;
+}
+
+.text-color-blue {
+    color: #090e79 !important;
+}
+
+.bg-gradation-blue {
+    background: rgb(9,14,121) !important;
+    background: linear-gradient(0deg, rgba(9,14,121,1) 0%, rgba(9,16,123,1) 18%, rgba(9,22,127,1) 49%, rgba(12,73,162,1) 69%, rgba(0, 212, 255, 1) 100%) !important;
+    border: none !important;
+}
+.bg-gradation-blue2 {
+    background: rgb(9,22,127) !important;
+    background: linear-gradient(0deg, rgba(9,22,127,1) 0%, rgba(23,45,147,1) 51%, rgba(9,22,127,1) 100%) !important;
+    border: none !important;
+}
+
+/* Section dividers */
+.shape-divider-GHG-Header{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-GHG-Header::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    top: -1px;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: 264% 170px;
+    background-position: 63% 0%;
+    transform: rotateY(180deg);
+    background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0.1 35.28 2.17" preserveAspectRatio="none"><path d="M0 1.85c2.56-.83 7.68-.3 11.79-.42 4.1-.12 6.86-.61 9.58-.28 2.73.33 5.61 1.17 8.61 1 3-.19 4.73-.82 5.3-.84V.1H0z" fill="%23e4eef0"/></svg>');
+}
+
+@media (min-width:768px){
+    .shape-divider-GHG-Header::before{
+        background-size: 143% 139px;
+        background-position: 50% 0%;
+        transform: rotateY(180deg);
+    }
+}
+
+@media (min-width:1025px){
+    .shape-divider-GHG-Header::before{
+        bottom: -0.1vw;
+        left: -0.1vw;
+        right: -0.1vw;
+        top: -0.1vw;
+        background-size: 123% 163px;
+        background-position: 50% 0%;
+        transform: rotateY(180deg);
+    }
+}
+@media (min-width:2100px){
+    .shape-divider-GHG-Header::before{
+        background-size: 123% calc(2vw + 163px);
+    }
+}
+
+
+.shape-divider-Wave-Green{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-Wave-Green::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 119% 46px;
+    background-position: 50% 100%;
+    transform: rotateY(180deg); background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23a7d8d0"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23a7d8d0"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23a7d8d0"/></svg>');
+}
+
+@media (min-width:2100px){
+    .shape-divider-Wave-Green::before{
+        background-size: 119% calc(2vw + 46px);
+    }
+}
+
+
+.shape-divider-Wave-Blue{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-Wave-Blue::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 119% 46px;
+    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%230d3d7d"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%230d3d7d"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%230d3d7d"/></svg>');
+}
+
+@media (min-width:2100px){
+    .shape-divider-Wave-Blue::before{
+        background-size: 119% calc(2vw + 46px);
+    }
+}
+
+.shape-divider-GHG-Horizon-Gray{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-GHG-Horizon-Gray::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 147% 40px;
+    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="%23e3e3e3"><path d="M1000 100V89S823 4 500 4 0 88 0 88v12z" opacity=".3"/><path d="M1000 101S823 11 500 11 0 100 0 100z" opacity=".5"/><path d="M1000 100V88S823 25 500 25 0 87 0 87v13z"/></g></svg>');
+}
+
+@media (min-width:2100px){
+    .shape-divider-GHG-Horizon-Gray::before{
+        background-size: 147% calc(2vw + 40px);
+    }
+}
+
+.shape-divider-GHG-Horizon-White{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-GHG-Horizon-White::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 147% 40px;
+    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100"><g fill="%23ffffff"><path d="M1000 100V89S823 4 500 4 0 88 0 88v12z" opacity=".3"/><path d="M1000 101S823 11 500 11 0 100 0 100z" opacity=".5"/><path d="M1000 100V88S823 25 500 25 0 87 0 87v13z"/></g></svg>');
+}
+
+@media (min-width:2100px){
+    .shape-divider-GHG-Horizon-White::before{
+        background-size: 147% calc(2vw + 40px);
+    }
+}
+
+
+
+.shape-divider-GHG-Oceanblue{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-GHG-Oceanblue::before{
+    content:'';
+    font-family:'shape divider from ShapeDividers.com';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    transform:scaleX(4);
+    transform-origin: 100% 100%;
+    animation: 12s infinite alternate shape-anim-2607  linear;
+    background-size: 100% 65px;
+    background-position: 50% 100%;  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%2300d3fe"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%2300d3fe"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%2300d3fe"/></svg>');
+}
+
+@media (min-width:2100px){
+    .shape-divider-GHG-Oceanblue::before{
+        background-size: 115% calc(2vw + 65px);
+    }
+}
+
+@keyframes shape-anim-2607 {
+    100% {
+        transform: scaleX(4) translateX(calc(100% - (100% / 4)));
+    }
+}
+
+
+.shape-divider-GHG-Footer{
+    overflow:hidden;
+    position:relative;
+}
+.shape-divider-GHG-Footer::before{
+    content:'';
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 57px;
+    background-position: 50% 100%;
+    transform: rotateY(180deg); background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.28 2.17" preserveAspectRatio="none"><path d="M35.28 1.67c-3.07-.55-9.27.41-16.15 0-6.87-.4-13.74-.58-19.13.1v.4h35.28z" fill="%23603715"/><path d="M35.28 1.16c-3.17-.8-7.3.4-10.04.56-2.76.17-9.25-1.47-12.68-1.3-3.42.16-4.64.84-7.04.86C3.12 1.31 0 .4 0 .4v1.77h35.28z" opacity=".5" fill="%23603715"/><path d="M35.28.31c-2.57.84-7.68.3-11.8.43-4.1.12-6.85.61-9.57.28C11.18.69 8.3-.16 5.3.02 2.3.22.57.85 0 .87v1.2h35.28z" opacity=".5" fill="%23603715"/></svg>');
+}
+
+@media (min-width:2100px){
+    .shape-divider-GHG-Footer::before{
+        background-size: 100% calc(2vw + 57px);
+    }
+}
+
+
+
+
+
+
+
+
